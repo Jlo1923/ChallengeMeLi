@@ -1,0 +1,23 @@
+plugins {
+    id 'java-library'
+    id 'kotlin'
+}
+
+java {
+    sourceCompatibility = JavaVersion.VERSION_1_7
+    targetCompatibility = JavaVersion.VERSION_1_7
+}
+dependencies {
+    implementation Dependencies.kotlin
+    implementation Dependencies.kotlinCoroutines
+
+    // DI
+    implementation Dependencies.dagger
+
+    // Testing
+    //testImplementation project(path: ':testing_commons')
+    testImplementation TestDependencies.junit
+    testImplementation TestDependencies.mockito
+    testImplementation TestDependencies.mockitoKotlin
+    testImplementation TestDependencies.coroutinesTest
+}

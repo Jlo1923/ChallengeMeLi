@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/home">
+
+    <fragment
+        android:id="@+id/home"
+        android:name="com.jlo.presentation.home.HomeFragment"
+        android:label="@string/fragment_home"
+        tools:layout="@layout/fragment_home">
+        <action
+            android:id="@+id/action_home_to_productDetail"
+            app:destination="@id/productDetail" />
+        <action
+            android:id="@+id/action_home_to_search"
+            app:destination="@id/search" />
+    </fragment>
+    <fragment
+        android:id="@+id/products"
+        android:name="com.jlo.presentation.products.ProductsFragment"
+        android:label="@string/fragment_products"
+        tools:layout="@layout/fragment_products">
+        <argument
+            android:name="query"
+            app:argType="string" />
+        <action
+            android:id="@+id/action_products_to_productDetail"
+            app:destination="@id/productDetail" />
+        <action
+            android:id="@+id/action_products_to_search"
+            app:destination="@id/search" />
+    </fragment>
+    <fragment
+        android:id="@+id/productDetail"
+        android:name="com.jlo.presentation.product_detail.ProductDetailFragment"
+        android:label="@string/fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail">
+        <argument
+            android:name="productId"
+            app:argType="string" />
+    </fragment>
+    <action
+        android:id="@+id/action_global_products"
+        app:destination="@id/products"
+        app:launchSingleTop="true" />
+    <activity
+        android:id="@+id/search"
+        android:name="com.jlo.presentation.search.SearchActivity"
+        android:label="activity_search"
+        tools:layout="@layout/activity_search" />
+
+</navigation>

@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="fragment_home">Mercado Libre</string>
+    <string name="fragment_search">Buscar</string>
+    <string name="fragment_products">Resultados</string>
+    <string name="fragment_product_detail">Producto</string>
+    <string name="search">Buscar</string>
+    <string name="this_caught_your_attention">Llamo tu atención</string>
+    <string name="home_title">Encuentra lo que necesitas</string>
+    <string name="product_image">Imagen del producto</string>
+    <string name="app_label">Mercado Libre</string>
+    <string name="search_hint">Algo que te guste …</string>
+    <string name="retry">Reintentar</string>
+    <string name="error">Un error a sucedido</string>
+    <string name="error_msg_network">Sin conexión a internet</string>
+    <string name="error_msg_database">Un error a sucedido</string>
+    <string name="features">Caracteristicas</string>
+    <string name="description">Descripción</string>
+    <string name="products_available">%1$d Disponbles</string>
+    <string name="not_description">Sin Descripción</string>
+</resources>

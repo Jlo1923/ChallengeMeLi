@@ -1,0 +1,20 @@
+<resources>
+    <string name="fragment_home">Mercado Libre</string>
+    <string name="fragment_search">Search</string>
+    <string name="fragment_products">Results</string>
+    <string name="fragment_product_detail">Product</string>
+    <string name="search">Search</string>
+    <string name="this_caught_your_attention">This caught your attention</string>
+    <string name="home_title">Find what you need</string>
+    <string name="product_image">Product Image</string>
+    <string name="app_label">Mercado Libre</string>
+    <string name="search_hint">Something you like …</string>
+    <string name="retry">Retry</string>
+    <string name="error">A error happened</string>
+    <string name="error_msg_network">Not Internet Connection</string>
+    <string name="error_msg_database">Something went wrong</string>
+    <string name="features">Features</string>
+    <string name="description">Description</string>
+    <string name="products_available">%1$d Available</string>
+    <string name="not_description">Not Description</string>
+</resources>

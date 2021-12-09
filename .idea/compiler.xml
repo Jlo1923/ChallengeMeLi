@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <bytecodeTargetLevel target="1.7">
+      <module name="ChallengeMeLi.app" target="11" />
+      <module name="ChallengeMeLi.buildSrc" target="11" />
+      <module name="ChallengeMeLi.data2" target="11" />
+      <module name="ChallengeMeLi.local_data_source" target="11" />
+      <module name="ChallengeMeLi.presentation" target="11" />
+      <module name="ChallengeMeLi.prueba" target="11" />
+      <module name="ChallengeMeLi.remote_data_source" target="11" />
+      <module name="ChallengeMeLi.themes" target="11" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

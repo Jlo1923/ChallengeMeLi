@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources xmlns:tools="http://schemas.android.com/tools">
+
+    <style name="Theme.MercadoLibre" parent="Theme.MaterialComponents.DayNight.DarkActionBar">
+        <item name="android:windowBackground">@color/gray_100</item>
+        <item name="colorPrimary">@color/yellow</item>
+        <item name="colorPrimaryVariant">@color/yellowDark</item>
+        <item name="colorOnPrimary">@color/white</item>
+        <item name="colorSecondary">@color/purple</item>
+        <item name="colorSecondaryVariant">@color/purpleDark</item>
+        <item name="colorOnSecondary">@color/white</item>
+        <item name="android:statusBarColor" tools:targetApi="l">?attr/colorPrimaryVariant</item>
+        <!-- Custom Styles-->
+        <item name="variantStyle">@style/ThemeOverlay.MercadoLibre.Variant</item>
+
+    </style>
+
+    <style name="Theme.MercadoLibre.NoActionBar">
+        <item name="windowActionBar">false</item>
+        <item name="windowNoTitle">true</item>
+    </style>
+
+    <style name="Theme.MercadoLibre.AppBarOverlay" parent="ThemeOverlay.AppCompat.Dark.ActionBar" />
+
+    <style name="Theme.MercadoLibre.PopupOverlay" parent="ThemeOverlay.AppCompat.Light" />
+
+    <!-- Custom Themes-->
+    <style name="ThemeOverlay.MercadoLibre.Variant" parent="">
+        <item name="android:background">@color/purple</item>
+        <item name="colorPrimary">@color/white</item>
+    </style>
+
+
+
+</resources>

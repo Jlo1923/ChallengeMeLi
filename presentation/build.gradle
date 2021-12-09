@@ -1,0 +1,82 @@
+plugins {
+    id 'com.android.library'
+    id 'kotlin-android'
+    id 'kotlin-kapt'
+    id 'androidx.navigation.safeargs.kotlin'
+    id 'dagger.hilt.android.plugin'
+}
+
+android {
+    compileSdkVersion 30
+    buildToolsVersion "30.0.3"
+
+    defaultConfig {
+        minSdkVersion 16
+        targetSdkVersion 30
+        versionCode 1
+        versionName "1.0"
+
+        testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
+        vectorDrawables.useSupportLibrary true
+    }
+    buildFeatures{
+        viewBinding true
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android-optimize.txt'), 'proguard-rules.pro'
+        }
+    }
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+    kotlinOptions {
+        jvmTarget = '1.8'
+    }
+}
+
+dependencies {
+    implementation 'androidx.legacy:legacy-support-v4:1.0.0'
+    implementation 'androidx.appcompat:appcompat:1.2.0'
+    implementation "org.jetbrains.kotlin:kotlin-stdlib:1.4.31"
+    implementation 'androidx.constraintlayout:constraintlayout:2.0.4'
+    implementation project(path: ':themes')
+    implementation project(path: ':domain')
+
+    implementation Dependencies.kotlin
+    implementation Dependencies.coreKtx
+    implementation Dependencies.kotlinCoroutines
+    implementation Dependencies.appCompat
+    implementation Dependencies.constraintLayout
+    implementation Dependencies.material
+
+    // Lifecycle
+    implementation Dependencies.lifecycleLiveData
+    implementation Dependencies.lifecycleViewModel
+    implementation Dependencies.lifecycleCommonJ8
+
+    // Navigation
+    implementation Dependencies.navigationFragmentKtx
+    implementation Dependencies.navigationUiKtx
+
+    // DI
+    implementation Dependencies.hilt
+    kapt Dependencies.hiltCompiler
+    implementation 'androidx.hilt:hilt-navigation-fragment:1.0.0-alpha03'
+
+    // Glide
+    implementation Dependencies.glide
+    kapt Dependencies.glideCompiler
+
+    // Testing
+    testImplementation TestDependencies.junit
+    testImplementation TestDependencies.mockito
+    testImplementation TestDependencies.mockitoKotlin
+    testImplementation TestDependencies.coroutinesTest
+    androidTestImplementation TestDependencies.androidExtJUnit
+    androidTestImplementation TestDependencies.espresso
+}

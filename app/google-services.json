@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "480571819840",
+    "project_id": "challengemeli-95c94",
+    "storage_bucket": "challengemeli-95c94.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:480571819840:android:0c2d0ccd1e61befdcedca5",
+        "android_client_info": {
+          "package_name": "com.jlo.challengemeli"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "480571819840-9hmmef007bi8o8fq0eic0e9g00q7hsqn.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyC7YXliP-VtP7eFNmfJUf9wr5tZmOVcoCk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "480571819840-9hmmef007bi8o8fq0eic0e9g00q7hsqn.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
