@@ -145,19 +145,11 @@ z
 Jdomain/src/main/java/com/jlo/domain/usescases/GetProductsByQueryUseCase.kt,9\f\9f99bc0120a0c0be3525104a8d69e1189b7b7a34
 H
 app/google-services.json,f\d\fd8d34b142d02ec743a8efefefd2c097961666e9
-u
-Edata/src/main/java/com/jlo/data/datasources/ProductLocalDataSource.kt,c\9\c98175e7f63ac9f2be394e36c60a19900d43123a
 b
 2data/src/test/java/com/jlo/data/ExampleUnitTest.kt,0\f\0f9f3d70f211bd439bfb688c0dc0db7c10c482d8
-A
-gradle.properties,2\a\2afbb999f001938c88fa43fc2ef52abf0f8213e4
 F
 app/proguard-rules.pro,9\e\9e08934d811afe28fbc77aaa3c0d747b94348db9
 C
 themes/build.gradle,9\f\9f6079d8fc7aad7905844669eef06f1b7acd6110
-O
-remote_data_source/build.gradle,4\2\4296af2afb1ff10775b688809573d969db064199
 I
 presentation/build.gradle,2\9\29ca4091f3fd866a7d8488b04776c5994c7983b9
-N
-local_data_source/build.gradle,b\a\ba39c40bd47974e0a4c5300f97a73e928039e01f

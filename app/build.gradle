@@ -2,6 +2,8 @@ plugins {
     id 'com.android.application'
     id 'kotlin-android'
     id 'kotlin-kapt'
+    id 'dagger.hilt.android.plugin'
+    id 'com.google.gms.google-services'
 }
 
 android {
@@ -42,4 +44,20 @@ dependencies {
     implementation project(path: ':data')
     implementation project(path: ':remote_data_source')
     implementation project(path: ':local_data_source')
+    implementation Dependencies.kotlin
+    implementation Dependencies.coreKtx
+    implementation Dependencies.appCompat
+    implementation Dependencies.material
+
+    //Multidex
+    implementation Dependencies.multidex
+
+    // Firebase
+    implementation platform(Dependencies.firebaseBom)
+    implementation Dependencies.firebaseAnalitics
+
+    // DI
+    implementation Dependencies.hilt
+    kapt Dependencies.hiltCompiler
+
 }
